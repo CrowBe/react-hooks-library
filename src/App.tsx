@@ -8,7 +8,6 @@ function App() {
   const [query, setQuery] = useSearchParamsState({
     count: {default: 1, type: 'number', required: true}
   })
-  console.log(query)
   const incrementCount = useCallback(() => setQuery('count', query.count + 1), [query, setQuery])
   return (
     <>
